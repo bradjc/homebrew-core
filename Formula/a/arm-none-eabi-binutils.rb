@@ -30,7 +30,8 @@ class ArmNoneEabiBinutils < Formula
            "--prefix=#{prefix}",
            "--libdir=#{lib}/#{target}",
            "--infodir=#{info}/#{target}",
-           "--disable-nls"
+           "--disable-nls",
+           "--enable-plugins"
     system "make"
     system "make", "install"
   end
