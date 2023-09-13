@@ -33,6 +33,7 @@ class ArmNoneEabiGcc < Formula
                              "--infodir=#{info}/#{target}",
                              "--disable-nls",
                              "--without-isl",
+                             "--with-multilib-list=rmprofile",
                              "--without-headers",
                              "--with-as=#{Formula["arm-none-eabi-binutils"].bin}/arm-none-eabi-as",
                              "--with-ld=#{Formula["arm-none-eabi-binutils"].bin}/arm-none-eabi-ld",
